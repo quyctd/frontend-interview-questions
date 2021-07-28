@@ -20,3 +20,13 @@ This is the list of questions I get asked over time when I applied to some compa
 1. ### Compare Redux and Context API
 2. ### Redux flow - diagram
 3. ### Flux and Redux
+4. ### Compare React Class component and React Functional component
+5. ### Lifecycle in React
+6. ### useEffect hook
+7. ### useState hook
+8. ### useMemo hook
+9. ### useCallback hook
+10. ### useReducer hook
+11. ### custom hook in FC
+12. ### Why and when Redux
+13. ### Middleware in Redux
