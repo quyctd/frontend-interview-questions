@@ -1,7 +1,7 @@
 # Frontend Interview Questions
 
 This is the list of questions I get asked over time when I applied to some companies. The list doesn't sort in anyways. I write it down randomly as I remember, or I come up with...
-
+---
 ## Vanilla JS
 1. ### What are JS Data types?
 2. ### Hoisting in JS?
@@ -15,7 +15,7 @@ This is the list of questions I get asked over time when I applied to some compa
 10. ### Async/Await, compare with Promise
 11. ### Currying function in JS
 12. ### Implement Infinite Scroll using IntersectionObserver API 
-
+---
 ## React JS
 1. ### Compare Redux and Context API
 2. ### Redux flow - diagram
@@ -31,16 +31,16 @@ This is the list of questions I get asked over time when I applied to some compa
 12. ### Why and when Redux
 13. ### Middleware in Redux
 14. ### Direct mutate states?
-
+---
 ## TypeScript
 1. ### What Typescript
 2. ### Why Typescript
 3. ### Compare Interface with Type
 4. ### Compare Unknown vs Any
-
+---
 ## NextJS
 1. ### Why Next.JS?
-
+---
 ## General Knowlegde
 1. ### Test Driven Development
 2. ### Micro Frontend
@@ -50,12 +50,12 @@ This is the list of questions I get asked over time when I applied to some compa
 6. ### Animation: GSAP, react-transition-group
 7. ### RxJS - Observable
 8. ### style - SaSS, SCSS
-
+---
 ## Computer Sience
 1. ### List of Data structure
 2. ### Some sorting algorithm
 3. ### List of Algorithms
-
+---
 ## Behavior/Project Questions
 1. ### Your role at last company
 2. ### Why do you leave your last company
