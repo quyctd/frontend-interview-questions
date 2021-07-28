@@ -2,7 +2,7 @@
 
 This is the list of questions I get asked over time when I applied to some companies. The list doesn't sort in anyways. I write it down randomly as I remember, or I come up with...
 
-## Core JS
+## Vanilla JS
 1. ### What are JS Data types?
 2. ### Hoisting in JS?
 3. ### Scope and the Scope chain
@@ -30,3 +30,36 @@ This is the list of questions I get asked over time when I applied to some compa
 11. ### custom hook in FC
 12. ### Why and when Redux
 13. ### Middleware in Redux
+14. ### Direct mutate states?
+
+## TypeScript
+1. ### What Typescript
+2. ### Why Typescript
+3. ### Compare Interface with Type
+4. ### Compare Unknown vs Any
+
+## NextJS
+1. ### Why Next.JS?
+
+## General Knowlegde
+1. ### Test Driven Development
+2. ### Micro Frontend
+3. ### List of design pattern in FE
+4. ### Compare GraphQL vs Rest API
+5. ### Testing: Jest & React Testing Library
+6. ### Animation: GSAP, react-transition-group
+7. ### RxJS - Observable
+8. ### style - SaSS, SCSS
+
+## Computer Sience
+1. ### List of Data structure
+2. ### Some sorting algorithm
+3. ### List of Algorithms
+
+## Behavior/Project Questions
+1. ### Your role at last company
+2. ### Why do you leave your last company
+3. ### Why do you change from Back-end to Front-end
+4. ### Tell me about your last project
+5. ### Problem on your project - Image grid
+6. ### Problem on your project - Speed optimization
