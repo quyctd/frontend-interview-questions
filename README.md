@@ -37,7 +37,32 @@ This is the list of questions I get asked over time when I applied to some compa
     ```
  
 3. ### Scope and the Scope chain
-6. ### Temporal Dead Zone for Let and Const
+    Scope in JS, determines the accessibility of variables and functions at various parts in one’s code.
+    
+    In general terms, the scope will let us know at a given part of code, what are the variables and functions that we can or cannot access.
+    
+    ![image](https://user-images.githubusercontent.com/30380214/127509531-a6ddd4bb-b9ec-496e-a6ef-b83751aed0b4.png)
+    
+    There are three types of scopes in JS:
+    - Global Scope
+    - Local or Function Scope
+    - Block Scope
+
+    ![image](https://user-images.githubusercontent.com/30380214/127509594-a0951896-9290-4075-8dd4-ef00e9b43104.png)
+    
+    JavaScript engine also uses Scope to find variables.
+    
+    ![image](https://user-images.githubusercontent.com/30380214/127509653-18b67c6d-bc88-4f29-b3f4-e0701dd46e53.png)
+    
+    **As you can see in the code above, if the javascript engine does not find the variable in local scope, it tries to check for the variable in the outer scope.      If the variable does not exist in the outer scope, it tries to find the variable in the global scope.**
+
+    If the variable is not found in the global space as well, reference error is thrown.
+    
+    ![image](https://user-images.githubusercontent.com/30380214/127509731-34c8b11b-d25f-40eb-bec0-38f671b2630e.png)
+    ![image](https://user-images.githubusercontent.com/30380214/127509792-2548bcea-0345-43da-b544-b4f384b2d16d.png)
+    ![image](https://user-images.githubusercontent.com/30380214/127509861-c61b4d26-7df6-4359-8800-21af8c9f66cb.png)
+    
+4. ### Temporal Dead Zone for Let and Const
 7. ### The JS Engine and Runtime
 8. ### Execution Contexts and The Call Stack
 9. ### The `this` keyword
