@@ -76,7 +76,11 @@ It is a behavior where we try to access a variable before it is initialized.
 ![image](https://user-images.githubusercontent.com/30380214/127511952-86a26e9c-20b4-4589-b543-d467430ccdf6.png)
 ![image](https://user-images.githubusercontent.com/30380214/127511964-ba4d0740-ec0e-4d9d-9120-dde674b1cc04.png)
 
-8. ### Execution Contexts and The Call Stack
+### Execution Contexts and The Call Stack
+![image](https://user-images.githubusercontent.com/30380214/127512479-ca556960-c588-4e70-aacf-ddaeab27d755.png)
+![image](https://user-images.githubusercontent.com/30380214/127512521-58d24684-92b9-460d-b1fb-4941d86e7be7.png)
+![image](https://user-images.githubusercontent.com/30380214/127512564-30932808-f4c3-48c1-b54a-2365795d9154.png)
+
 9. ### The `this` keyword
 10. ### The Eventloop
 11. ### Promise
