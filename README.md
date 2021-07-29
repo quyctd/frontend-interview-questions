@@ -4,17 +4,48 @@ This is the list of questions I get asked over time when I applied to some compa
 ---
 ## Vanilla JS
 1. ### What are JS Data types?
+    - Number
+    - Boolean
+    - String
+    - Object
+    - Null
+    - Undifined
+    - Symbol
+    - BigInt?
 2. ### Hoisting in JS?
+    Hoisting is a default behavior of JS where all the variable and function declarations are moved on top.
+    ![image](https://user-images.githubusercontent.com/30380214/127508500-88d81b68-54ec-43ef-9426-b6552fbac6cd.png)
+    Example:
+    ```js
+    hoistedVariable = 3;
+    console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	
+    var hoistedVariable;
+    ```
+    
+    ```js
+    hoistedFunction();  // Outputs " Hello world! " even when the function is declared after calling
+
+    function hoistedFunction(){ 
+      console.log(" Hello world! ");
+    }
+    ```
+    
+    ```js
+    var x;
+    console.log(x); // Outputs "undefined" since the initialization of "x" is not hoisted
+    x = 23;
+    ```
+ 
 3. ### Scope and the Scope chain
-4. ### Temporal Dead Zone for Let and Const
-5. ### The JS Engine and Runtime
-6. ### Execution Contexts and The Call Stack
-7. ### The `this` keyword
-8. ### The Eventloop
-9. ### Promise
-10. ### Async/Await, compare with Promise
-11. ### Currying function in JS
-12. ### Implement Infinite Scroll using IntersectionObserver API 
+6. ### Temporal Dead Zone for Let and Const
+7. ### The JS Engine and Runtime
+8. ### Execution Contexts and The Call Stack
+9. ### The `this` keyword
+10. ### The Eventloop
+11. ### Promise
+12. ### Async/Await, compare with Promise
+13. ### Currying function in JS
+14. ### Implement Infinite Scroll using IntersectionObserver API 
 
 
 ---
