@@ -63,6 +63,13 @@ This is the list of questions I get asked over time when I applied to some compa
     ![image](https://user-images.githubusercontent.com/30380214/127509861-c61b4d26-7df6-4359-8800-21af8c9f66cb.png)
     
 4. ### Temporal Dead Zone for Let and Const
+    Temporal Dead Zone is a behavior that occurs with variables declared using let and const keywords.
+
+    It is a behavior where we try to access a variable before it is initialized.
+    
+    ![image](https://user-images.githubusercontent.com/30380214/127511171-391e46ee-fd96-4fed-b619-1bb5cda3a7a3.png)
+    ![image](https://user-images.githubusercontent.com/30380214/127511209-0ba1df83-b5f2-4c79-955d-3d5423604bfb.png)
+
 7. ### The JS Engine and Runtime
 8. ### Execution Contexts and The Call Stack
 9. ### The `this` keyword
