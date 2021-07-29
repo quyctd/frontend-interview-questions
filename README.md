@@ -81,7 +81,12 @@ It is a behavior where we try to access a variable before it is initialized.
 ![image](https://user-images.githubusercontent.com/30380214/127512521-58d24684-92b9-460d-b1fb-4941d86e7be7.png)
 ![image](https://user-images.githubusercontent.com/30380214/127512564-30932808-f4c3-48c1-b54a-2365795d9154.png)
 
-9. ### The `this` keyword
+### The `this` keyword
+**The “this” keyword refers to the object that the function is a property of.**
+
+**The value of “this” keyword will always depend on the object that is invoking the function.**
+![image](https://user-images.githubusercontent.com/30380214/127512815-cd7f6b03-cf5e-44f0-91bb-4c77d83867a8.png)
+
 10. ### The Eventloop
 11. ### Promise
 12. ### Async/Await, compare with Promise
