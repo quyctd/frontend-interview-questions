@@ -159,6 +159,7 @@ It is a behavior where we try to access a variable before it is initialized.
 3. ### List of Algorithms
 
 
+
 ## 🤫 Behavior/Project Questions
 
 ### Your role at last company
