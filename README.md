@@ -167,6 +167,10 @@ After about 1 year, Pixta have a new project, and also open a new position so I 
 As a FE developer, I working mainly on ReactJS, and NextJS. The more I work with FE, the more I interested on it. After 1 year, this project came to adverstizing state, where the workload is not much. Also, the environment of Pixta don't have much FE engineers, mostly is BE engineers, so my learning curve/speed on FE start going down. That why I'm looking for another oppoturnity.
 
 ### Why do you change from Back-end to Front-end
+There are few reasons that made this decision. Personally, I always looking for challenges, to develop myself and growth at a faster pace. Also, I love the felling when you can solved challenging problem. So, at that time, changing to new fields is the most challenging challenge for me. Plus, FE in the last few years growing super fast, it have many new technologies, tools, frameworks, and it still growing. Compare to FE, BE is quite mature now, you can pickup any framework and then make a same product with that framework.
+
+So, with all these reasons, I decided to take the challenge to become a FE developer.
+And yeah, I'm happy because I take up that challenge. Learning FE and do the work in FE is very enjoyable. The more I work in FE, the more I interested on it.
 
 ### Tell me about your last project
 
