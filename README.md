@@ -161,9 +161,15 @@ It is a behavior where we try to access a variable before it is initialized.
 
 ---
 ## Behavior/Project Questions
-1. ### Your role at last company
-2. ### Why do you leave your last company
-3. ### Why do you change from Back-end to Front-end
-4. ### Tell me about your last project
-5. ### Problem on your project - Image grid
-6. ### Problem on your project - Speed optimization
+### Your role at last company
+My last company I worked for is Pixta Vietnam. At Pixta Vietnam, I joined it as Backend Developer, working mainly on Ruby, Rails and AWS. 
+After about 1 year, Pixta have a new project, and also open a new position so I take that oppoturnity and changed my role to Front-end Developer.
+As a FE developer, I working mainly on ReactJS, and NextJS. The more I work with FE, the more I interested on it. After 1 year, this project came to adverstizing state, where the workload is not much. Also, the environment of Pixta don't have much FE engineers, mostly is BE engineers, so my learning curve/speed on FE start going down. That why I'm looking for another oppoturnity.
+
+### Why do you change from Back-end to Front-end
+
+### Tell me about your last project
+
+### Problem on your project - Image grid
+
+### Problem on your project - Speed optimization
