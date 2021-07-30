@@ -159,13 +159,14 @@ It is a behavior where we try to access a variable before it is initialized.
 3. ### List of Algorithms
 
 
----
-## Behavior/Project Questions
+## 🤫 Behavior/Project Questions
+
 ### Your role at last company
 My last company I worked for is Pixta Vietnam. At Pixta Vietnam, I joined it as Backend Developer, working mainly on Ruby, Rails and AWS. 
 After about 1 year, Pixta have a new project, and also open a new position so I take that oppoturnity and changed my role to Front-end Developer.
 As a FE developer, I working mainly on ReactJS, and NextJS. The more I work with FE, the more I interested on it. After 1 year, this project came to adverstizing state, where the workload is not much. Also, the environment of Pixta don't have much FE engineers, mostly is BE engineers, so my learning curve/speed on FE start going down. That why I'm looking for another oppoturnity.
 
+---
 ### Why do you change from Back-end to Front-end
 There are few reasons that made this decision. Personally, I always looking for challenges, to develop myself and growth at a faster pace. Also, I love the felling when you can solved challenging problem. So, at that time, changing to new fields is the most challenging challenge for me. Plus, FE in the last few years growing super fast, it have many new technologies, tools, frameworks, and it still growing. Compare to FE, BE is quite mature now, you can pickup any framework and then make a same product with that framework.
 
