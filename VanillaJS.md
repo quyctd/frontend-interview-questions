@@ -94,6 +94,9 @@ High-order function is a function that **receives** another functions **as a arg
 
 ![image](https://user-images.githubusercontent.com/30380214/127742630-a322c1e2-5b7c-4480-b90d-65de45d2a37f.png)
 
+### The `apply`, `call`, `bind` methods
+
+### Immediately invoked Function Expressions
 ### The Eventloop
 ### Promise
 ### Async/Await, compare with Promise
