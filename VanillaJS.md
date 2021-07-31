@@ -87,6 +87,13 @@ It is a behavior where we try to access a variable before it is initialized.
 ### Primitive types and Reference types
 ![image](https://user-images.githubusercontent.com/30380214/127741744-7c544403-cc89-469c-9949-a56888f10dc6.png)
 
+### First-class vs High-order functions
+In computer science, a programming language is said to have **first-class functions** if it treats functions as **first-class citizens**. This means the language supports **passing functions as arguments** to other functions, **returning them as the values** from other functions, and **assigning them to variables** or **storing them in data structures**.
+
+High-order function is a function that **receives** another functions **as a arguments**, or **returns a new function**, or **both** 
+
+![image](https://user-images.githubusercontent.com/30380214/127742630-a322c1e2-5b7c-4480-b90d-65de45d2a37f.png)
+
 ### The Eventloop
 ### Promise
 ### Async/Await, compare with Promise
