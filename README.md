@@ -93,6 +93,7 @@ It is a behavior where we try to access a variable before it is initialized.
 13. ### Currying function in JS
 14. ### Implement Infinite Scroll using IntersectionObserver API 
 15. ### JS slice and splice
+16. ### JS array reduce
 
 
 ---
