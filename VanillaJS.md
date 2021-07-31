@@ -84,6 +84,9 @@ It is a behavior where we try to access a variable before it is initialized.
 **The value of “this” keyword will always depend on the object that is invoking the function.**
 ![image](https://user-images.githubusercontent.com/30380214/127512815-cd7f6b03-cf5e-44f0-91bb-4c77d83867a8.png)
 
+### Primitive types and Reference types
+![image](https://user-images.githubusercontent.com/30380214/127741744-7c544403-cc89-469c-9949-a56888f10dc6.png)
+
 ### The Eventloop
 ### Promise
 ### Async/Await, compare with Promise
