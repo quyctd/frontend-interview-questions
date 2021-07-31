@@ -6,10 +6,6 @@ This is the list of questions I get asked over time when I applied to some compa
 ## React JS
 
 ## TypeScript
-1. ### What Typescript
-2. ### Why Typescript
-3. ### Compare Interface with Type
-4. ### Compare Unknown vs Any
 
 ## NextJS
 1. ### Why Next.JS?
