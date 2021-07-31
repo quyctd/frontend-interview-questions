@@ -150,6 +150,9 @@ It is a behavior where we try to access a variable before it is initialized.
 6. ### Animation: GSAP, react-transition-group
 7. ### RxJS - Observable
 8. ### style - SaSS, SCSS
+9. ### CSS: Grid
+10. ### CSS: Flexbox
+11. ### CSS: Em vs Rem vs Pixel
 
 
 ---
