@@ -235,10 +235,10 @@ Closure makes the function remember all the variables that existed at the functi
 
 **This ability of a function to store a variable for further reference even after it is executed, is called Closure.**
 
-### The Eventloop
-### Promise
-### Async/Await, compare with Promise
-### Currying function in JS
-### Implement Infinite Scroll using IntersectionObserver API 
-### JS slice and splice
-### JS array reduce
+## The Eventloop
+## Promise
+## Async/Await, compare with Promise
+## Currying function in JS
+## Implement Infinite Scroll using IntersectionObserver API 
+## JS slice and splice
+## JS array reduce
