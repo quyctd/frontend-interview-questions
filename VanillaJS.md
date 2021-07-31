@@ -237,6 +237,7 @@ Closure makes the function remember all the variables that existed at the functi
 
 ## The Eventloop
 ## Promise
+## Why do we need async/await/promise
 ## Async/Await, compare with Promise
 ## Currying function in JS
 ## Implement Infinite Scroll using IntersectionObserver API 
