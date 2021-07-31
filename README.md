@@ -92,6 +92,7 @@ It is a behavior where we try to access a variable before it is initialized.
 12. ### Async/Await, compare with Promise
 13. ### Currying function in JS
 14. ### Implement Infinite Scroll using IntersectionObserver API 
+15. ### JS slice and splice
 
 
 ---
