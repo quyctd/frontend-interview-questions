@@ -3,40 +3,8 @@
 This is the list of questions I get asked over time when I applied to some companies. The list doesn't sort in anyways. I write it down randomly as I remember, or I come up with...
 ## Vanilla JS
 
----
 ## React JS
 
-1. ### What is React?
-2. ### Advantages of React?
-3. ### Disadvantages of React?
-4. ### What is JSX?
-5. ### How to pass data between components?
-6. ### Virtual DOM
-7. ### What is React Fiber
-8. ### How State differ from Props
-9. ### Controlled component and Un-controlled component
-10. ### Pure component
-11. ### Higher Order Components
-12. ### Errors Boundaries
-13. ### Why hooks were introduced
-14. ### React Refs
-15. ### Compare Redux and Context API
-16. ### Redux flow - diagram
-17. ### Flux and Redux
-18. ### Compare React Class component and React Functional component
-19. ### Lifecycle in React
-20. ### useEffect hook
-21. ### useState hook
-22. ### useMemo hook
-23. ### useCallback hook
-24. ### useReducer hook
-25. ### custom hook in FC
-26. ### Why and when Redux
-27. ### Middleware in Redux
-28. ### Direct mutate states?
-
-
----
 ## TypeScript
 1. ### What Typescript
 2. ### Why Typescript
