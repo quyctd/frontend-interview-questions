@@ -97,6 +97,24 @@ High-order function is a function that **receives** another functions **as a arg
 ### The `apply`, `call`, `bind` methods
 
 ### Immediately invoked Function Expressions
+
+### Closure
+Closure makes the function remember all the variables that existed at the function's birthplace.
+> Closures are nothing but FUNCTIONS WITH PRESERVED DATA
+
+![image](https://user-images.githubusercontent.com/30380214/127747670-dc88668d-00d0-4fce-86fc-d3a3fc53f8a7.png)
+
+**A function always has access to the variable environment(VE) of the execution context in which it was created, even after that execution context was gone.**
+
+**Closure:  VE attached to the function, exactly as it was at the time and place the function was created**
+
+![image](https://user-images.githubusercontent.com/30380214/127747700-a0b67238-0d06-4c7a-a7b5-747a0c547e88.png)
+
+**Summary**
+![image](https://user-images.githubusercontent.com/30380214/127747704-81c1be17-2e07-44bf-a3fe-1fb81c888dd7.png)
+
+**This ability of a function to store a variable for further reference even after it is executed, is called Closure.**
+
 ### The Eventloop
 ### Promise
 ### Async/Await, compare with Promise
