@@ -8,13 +8,9 @@ This is the list of questions I get asked over time when I applied to some compa
 ## TypeScript
 
 ## NextJS
-1. ### Why Next.JS?
 
 ## General Knowlegde
 
 ## Computer Sience
-1. ### List of Data structure
-2. ### Some sorting algorithm
-3. ### List of Algorithms
 
 ## 🤫 Behavior/Project Questions
