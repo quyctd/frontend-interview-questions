@@ -235,6 +235,27 @@ Closure makes the function remember all the variables that existed at the functi
 
 **This ability of a function to store a variable for further reference even after it is executed, is called Closure.**
 
+## OOP in JS
+![image](https://user-images.githubusercontent.com/30380214/127779374-552477a1-44ac-4672-83cc-8c919df1f8b9.png)
+![image](https://user-images.githubusercontent.com/30380214/127779383-a27142f9-84a7-4822-bc14-1909727c1381.png)
+
+#### How Prototype Inheritance works (Not "classes" inherit)
+![image](https://user-images.githubusercontent.com/30380214/127779450-07d6fe19-c1c5-429d-af4e-109a2a2b6f39.png)
+![image](https://user-images.githubusercontent.com/30380214/127779452-0b72c91b-6bc1-443b-ae7c-0f8d778ee59b.png)
+
+#### The Prototype chain
+![image](https://user-images.githubusercontent.com/30380214/127779472-b551d574-7d69-48b3-b50d-65d03f034681.png)
+
+#### How Object.create works?
+![image](https://user-images.githubusercontent.com/30380214/127779480-e899c486-579b-49b7-b313-a111c0f3b889.png)
+
+#### Inheritance between "Classes" (Real inherit in OOP)
+![image](https://user-images.githubusercontent.com/30380214/127779499-b7bda4a0-17b9-4137-95b4-7c90b6be3706.png)
+![image](https://user-images.githubusercontent.com/30380214/127779504-4365d8dd-f992-4399-9b66-efc715ffae33.png)
+
+#### Classes Summary
+![image](https://user-images.githubusercontent.com/30380214/127779508-5cf40f61-c65c-4762-a359-00799a0cad89.png)
+
 ## The Eventloop
 ## Promise
 ## Why JS need Asynchronous?
