@@ -131,4 +131,33 @@ interface Response {
 }
 ```
 
+### What should I use: Types and Interfaces
+Interfaces are better when you need to define a new object or method of an object. For example, in React applications, when you need to define the props that a specific component is going to receive, it’s ideal to use interface over types:
+```jsx
+interface TodoProps {
+  name: string;
+  isCompleted: boolean
+};
+
+const Todo: React.FC<TodoProps> = ({ name, isCompleted }) => {
+  ...
+};
+```
+Types are better when you need to create functions, for example. Let’s imagine that we have a function that’s going to return an object called, type alias is more recommended for this approach:
+```jsx
+type Person = {
+  name: string,
+  age: number
+};
+
+type ReturnPerson = (
+  person: Person
+) => Person;
+
+const returnPerson: ReturnPerson = (person) => {
+  return person;
+};
+```
+Interface work better with objects and method objects, and types are better to work with functions, complex types, etc.
+
 ### Compare Unknown vs Any
