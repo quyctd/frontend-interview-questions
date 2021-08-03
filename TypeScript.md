@@ -161,3 +161,18 @@ const returnPerson: ReturnPerson = (person) => {
 Interface work better with objects and method objects, and types are better to work with functions, complex types, etc.
 
 ### Compare Unknown vs Any
+Much like `any`, any value is assignable to `unknown`; however, unlike `any`, you cannot access any properties on values with the type `unknown`, nor can you call/construct them. Furthermore, values of type `unknown` can only be assigned to `unknown` or `any`.
+
+Example:
+```jsx
+let vAny: any = 10;          // We can assign anything to any
+let vUnknown: unknown =  10; // We can assign anything to unknown just like any 
+
+
+let s1: string = vAny;     // Any is assignable to anything 
+let s2: string = vUnknown; // Invalid; we can't assign vUnknown to any other type (without an explicit assertion)
+
+vAny.method();     // Ok; anything goes with any
+vUnknown.method(); // Not ok; we don't know anything about this variable
+```
+
