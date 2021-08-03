@@ -29,6 +29,106 @@ There are different reasons why a JavaScript developer should consider using Typ
 
   TypeScript is closely related to JavaScript so it has great interoperability capabilities, but some extra work is required to work with JavaScript libraries in TypeScript.
 
-### Compare Interface with Type
+### Compare Types vs Interfaces
+**Interfaces are basically a way to describe data shapes, for example, an object.**
+**Type is a definition of a type of data, for example, a union, primitive, intersection, tuple, or any other type.**
+
+Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features of an interface are available in type, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.
+
+![Image](https://user-images.githubusercontent.com/30380214/128041806-ec4fc9c9-a0d1-44cc-8986-2f217491393d.png)
+
+### Extends and implements
+In TypeScript, we can easily extend and implement interfaces. This is not possible with types though.
+
+Interfaces in TypeScript can extend classes, this is a very awesome concept that helps a lot in a more object-oriented way of programming. We can also create classes implementing interfaces.
+
+For example, let’s imagine that we have a class called Car and an interface called NewCar, we can easily extend this class using an interface:
+```jsx
+class Car {
+  printCar = () => {
+    console.log("this is my car")
+  }
+};
+
+interface NewCar extends Car {
+  name: string;
+};
+
+class NewestCar implements NewCar {
+  name: "Car";
+  constructor(engine:string) {
+    this.name = name
+  }
+  printCar = () => {
+    console.log("this is my car")
+  }
+};
+```
+
+### Intersection
+Intersection allows us to combine multiple types into a single one type. To create an intersection type, we have to use the `&` keyword:
+```jsx
+type Name = {
+  name: “string”
+};
+
+type Age = {
+  age: number
+};
+
+type Person = Name & Age;
+```
+
+The nice thing here is that we can create a new intersection type combining two interfaces, for example, but not the other way around. We cannot create an interface combining two types, because it doesn’t work:
+```jsx
+interface Name {
+  name: “string”
+};
+
+interface Age {
+  age: number
+};
+
+type Person = Name & Age;
+```
+
+### Unions
+Union types allow us to create a new type that can have a value of one or a few more types. To create a union type, we have to use the `|` keyword.
+```jsx
+type Man = {
+  name: “string”
+};
+
+type Woman = {
+  name: “string”
+};
+
+type Person = Man | Woman;
+```
+
+Similar to intersections, we can create a new union type combining two interfaces, for example, but not the other way around:
+```jsx
+interface Man {
+  name: "string"
+};
+
+interface Woman {
+  name: "string"
+};
+
+type Person = Man | Woman;
+```
+
+### Tuples
+Tuples are a very helpful concept in TypeScript, it brought to us this new data type that includes two sets of values of different data types.
+```jsx
+type Reponse = [string, number]
+```
+But, in TypeScript, we can only declare tuples using types and not interfaces. There’s no way we can declare a tuple in TypeScript using an interface, but you still are able to use a tuple inside an interface, like this:
+```jsx
+interface Response {
+  value: [string, number]
+}
+```
 
 ### Compare Unknown vs Any
