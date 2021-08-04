@@ -256,11 +256,19 @@ Closure makes the function remember all the variables that existed at the functi
 #### Classes Summary
 ![image](https://user-images.githubusercontent.com/30380214/127779508-5cf40f61-c65c-4762-a359-00799a0cad89.png)
 
+## Synchronous and Asynchronous
+Synchronous code is executed in sequence – each statement waits for the previous statement to finish before executing. Asynchronous code doesn’t have to wait – your program can continue to run. You do this to keep your site or app responsive, reducing waiting time for the user.
+
+Example: `alert` function -> block everything else. More realistic, Facebook new feeds load done, then load messages -> block interactive with new feeds if non async.
+
+<img width="70%" style="margin: auto;" alt="Screen Shot 2021-08-02 at 10 39 36 PM" src="https://user-images.githubusercontent.com/30380214/128182011-bc8964ed-619f-4cec-80fe-a3b44c9645b3.png">
+<img width="70%" style="margin: auto;" alt="Screen Shot 2021-08-02 at 10 42 25 PM" src="https://user-images.githubusercontent.com/30380214/128182023-9ea7ae59-26e8-4173-9783-f16b5087c7ae.png">
+<img width="70%" style="margin: auto;" alt="Screen Shot 2021-08-02 at 10 44 51 PM" src="https://user-images.githubusercontent.com/30380214/128182032-4b619626-074a-4739-a91a-541324b2900b.png">
+
 ## The Eventloop
-## Callback Hell
 ## Promise
 ## Promise Chain
-## Synchronous and Asynchronous
+## Callback Hell
 ## Async/Await, compare with Promise
 ## Handle error with Promise
 ## Handle error with Async/await
