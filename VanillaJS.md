@@ -265,6 +265,18 @@ Example: `alert` function -> block everything else. More realistic, Facebook new
 <img width="70%" style="margin: auto;" alt="Screen Shot 2021-08-02 at 10 42 25 PM" src="https://user-images.githubusercontent.com/30380214/128182023-9ea7ae59-26e8-4173-9783-f16b5087c7ae.png">
 <img width="70%" style="margin: auto;" alt="Screen Shot 2021-08-02 at 10 44 51 PM" src="https://user-images.githubusercontent.com/30380214/128182032-4b619626-074a-4739-a91a-541324b2900b.png">
 
+## What is AJAX Call?
+<img width="70%" alt="Screen Shot 2021-08-02 at 10 47 10 PM" src="https://user-images.githubusercontent.com/30380214/128185367-f765f847-f955-455e-823f-4e15e8897b32.png">
+
+## What is an API?
+<img width="70%" alt="Screen Shot 2021-08-02 at 10 50 45 PM" src="https://user-images.githubusercontent.com/30380214/128185413-f841ceee-edce-4f88-9ef0-5dfbed72dd5a.png">
+
+## Javascript Runtime overview
+<img width="70%" alt="Screen Shot 2021-08-03 at 11 57 20 PM" src="https://user-images.githubusercontent.com/30380214/128185516-f0d3a164-d6f0-465a-b46d-647b32b543b7.png">
+
+## How Asynchronous code work behind the scence
+<img width="70%" alt="Screen Shot 2021-08-04 at 12 07 00 AM" src="https://user-images.githubusercontent.com/30380214/128185584-2e48b792-33f4-4132-ad8a-5a0a06f31d54.png">
+
 ## The Eventloop
 ## Promise
 ## Promise Chain
