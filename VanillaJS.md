@@ -379,6 +379,43 @@ It is typically used when you have multiple asynchronous tasks that are not depe
 In comparison, the Promise returned by `Promise.all()` may be more appropriate if the tasks are dependent on each other / if you'd like to immediately reject upon any of them rejecting.
 
 ## Currying function in JS
+Currying is an advanced technique to transform a function of arguments `n`, to `n` functions of one or less arguments.
+Example of a curried function:
+```jsx
+function add (a) {
+return function(b){
+  return a + b;
+  }
+}
+
+add(3)(4)
+```
+
+For Example, if we have a function `f(a,b)`, then the function after currying, will be transformed to `f(a)(b)`.
+By using the currying technique, we do not change the functionality of a function, we just change the way it is invoked.
+Let’s see currying in action:
+```jsx
+function multiply(a,b){
+  return a*b;
+}
+
+function currying(fn){
+  return function(a){
+    return function(b){
+      return fn(a,b);
+    }
+  }
+}
+
+var curriedMultiply = currying(multiply);
+
+multiply(4, 3); // Returns 12
+
+curriedMultiply(4)(3); // Also returns 12
+```
+
+As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply , which takes in one parameter at a time.
+
 ## Implement Infinite Scroll using IntersectionObserver API 
 ## JS slice and splice
 ## JS array reduce
