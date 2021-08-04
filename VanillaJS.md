@@ -319,11 +319,58 @@ p.then((result) => {
 ```
 
 ## Async/Await, compare with Promise
+Async/await is just a wrapper to restyle code, making promises easier to read and use in certain circumstances. At its core, async/await still uses promises.
+![image](https://user-images.githubusercontent.com/30380214/128197290-2e86b319-d4d4-4154-8dc2-078b25ae5306.png)
+
+**Async function always return a Promise.**
+Async function will always return `fullfilled` Promise, unless you specify tell the `async function` to `return, throw an Error()`
+
+To be able using `await`, the function itself should be `async function`. There are a proposal that we can `await` without `async` keyword, but not for now.
+
 ## Handle error with Promise
+To handle error in promise, we can use `.catch` method, or `.then` method with `onReject`.
+Example of `.then` method:
+```jsx
+p.then(onFulfilled[, onRejected]);
+
+p.then(value => {
+  // fulfillment
+}, reason => {
+  // rejection
+});
+```
+With `.catch` method, actually, we can reject the promise inside the `.then` method, by `throw Error();`, which will stop all the chain of `.then`.
+
 ## Handle error with Async/await
+To handle error of Async/await, simple using the `try, catch, finally` method of Javascript. That's all.
+
 ## Promise.all
+The `Promise.all()` method takes an iterable of promises as an input, and returns a single `Promise` that resolves to an array of the results of the input promises. 
+This returned promise will resolve when **all of the input's promises have resolved**, or if the input iterable contains no promises. 
+It **rejects immediately** upon **any of the input promises rejecting** or **non-promises throwing an error**, and will reject with this first rejection message / error.
+
 ## Promise.any
+`Promise.any()` takes an iterable of `Promise` objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. 
+If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is `rejected` with an `AggregateError`, a new subclass of `Error` that groups together individual errors.
+
 ## Promise.race
+The `Promise.race()` method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
+```jsx
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'one');
+});
+
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'two');
+});
+
+Promise.race([promise1, promise2]).then((value) => {
+  console.log(value);
+  // Both resolve, but promise2 is faster
+});
+// expected output: "two"
+```
+
 ## Promise.allSettled
 ## Currying function in JS
 ## Implement Infinite Scroll using IntersectionObserver API 
