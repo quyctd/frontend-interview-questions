@@ -260,7 +260,7 @@ Closure makes the function remember all the variables that existed at the functi
 ## Callback Hell
 ## Promise
 ## Promise Chain
-## Why JS need Asynchronous?
+## Synchronous and Asynchronous
 ## Async/Await, compare with Promise
 ## Handle error with Promise
 ## Handle error with Async/await
