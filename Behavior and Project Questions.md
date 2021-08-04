@@ -27,15 +27,33 @@ To date, these are my experiences while I transition from Back-End to Front-End 
 - You want to be a designer
 
 ### Tell me about your last project
+It's a stock photo website, using latest technology.
 
 ### Problem on your project - Image grid
+https://helix-moth-20b.notion.site/Row-Wise-Grids-1b82573fabb346b0a6202cbe72ebb0b3
 
 ### Problem on your project - Speed optimization
-- Async - Defer 3rd parties lib - Remove render-blocking js
-- Image optimization - dynamic sizes + src-set + lazyload
+- Async - Defer 3rd parties lib - Remove render-blocking js: https://web.dev/efficiently-load-third-party-javascript/
+Async script:
+![image](https://user-images.githubusercontent.com/30380214/128219909-73aca43b-63f6-488a-b26b-202da9e35e6f.png)
+Defer script:
+![image](https://user-images.githubusercontent.com/30380214/128219938-eb2bba81-62ab-4b65-ac92-092fb1a8ca79.png)
+Use async if it's important to have the script run earlier in the loading process.
+Use defer for less critical resources. A video player that's below-the-fold, for example.
+
+- Image optimization - dynamic sizes + src-set + lazyload + correct image format
+Don't save images larger than their display size.
+Save multiple sizes for each image and use the srcset attribute to enable the browser to choose the smallest. The w value tells the browser the width of each version:
+```html
+<img src="small.jpg"
+     srcset="small.jpg 500w,
+             medium.jpg 1000w,
+             large.jpg 1500w"
+     alt="…">
+```
 - Static site generation
 - Remove unused library - Tree shaking ⇒ Minify CSS, JavaScript, and HTML
 - Caching strategies - CDN
 - Monitor via Datadog - RUM - Realtime user monitoring
 - Reduce number of requests - code spliting
-- Consider Using Prefetch, Preconnect, and Prerender Techniques
+- Consider Using Prefetching - AKA static site, server side rendering Next JS
