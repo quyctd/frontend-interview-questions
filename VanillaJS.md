@@ -418,4 +418,22 @@ As one can see in the code above, we have transformed the function multiply(a,b)
 
 ## Implement Infinite Scroll using IntersectionObserver API 
 ## JS slice and splice
+Splice vs Slice
+- The `splice()` method returns the removed `item(s)` in an array and `slice()` method returns the selected element(s) in an array, as a new array object.
+- The `splice()` method changes the original array and `slice()` method doesn’t change the original array.
+- The `splice()` method can take n number of arguments and `slice()` method takes 2 arguments.
+
 ## JS array reduce
+The `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+```jsx
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+```
