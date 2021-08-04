@@ -31,4 +31,11 @@ To date, these are my experiences while I transition from Back-End to Front-End 
 ### Problem on your project - Image grid
 
 ### Problem on your project - Speed optimization
-
+- Async - Defer 3rd parties lib - Remove render-blocking js
+- Image optimization - dynamic sizes + src-set + lazyload
+- Static site generation
+- Remove unused library - Tree shaking ⇒ Minify CSS, JavaScript, and HTML
+- Caching strategies - CDN
+- Monitor via Datadog - RUM - Realtime user monitoring
+- Reduce number of requests - code spliting
+- Consider Using Prefetch, Preconnect, and Prerender Techniques
