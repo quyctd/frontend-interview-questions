@@ -257,9 +257,17 @@ Closure makes the function remember all the variables that existed at the functi
 ![image](https://user-images.githubusercontent.com/30380214/127779508-5cf40f61-c65c-4762-a359-00799a0cad89.png)
 
 ## The Eventloop
+## Callback Hell
 ## Promise
+## Promise Chain
 ## Why JS need Asynchronous?
 ## Async/Await, compare with Promise
+## Handle error with Promise
+## Handle error with Async/await
+## Promise.all
+## Promise.any
+## Promise.race
+## Promise.allSettled
 ## Currying function in JS
 ## Implement Infinite Scroll using IntersectionObserver API 
 ## JS slice and splice
