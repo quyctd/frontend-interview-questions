@@ -277,10 +277,47 @@ Example: `alert` function -> block everything else. More realistic, Facebook new
 ## How Asynchronous code work behind the scence
 <img width="70%" alt="Screen Shot 2021-08-04 at 12 07 00 AM" src="https://user-images.githubusercontent.com/30380214/128185584-2e48b792-33f4-4132-ad8a-5a0a06f31d54.png">
 
-## The Eventloop
 ## Promise
-## Promise Chain
+<img width="70%" alt="Screen Shot 2021-08-02 at 11 26 51 PM" src="https://user-images.githubusercontent.com/30380214/128193346-528c0257-2a86-4f75-bb1d-da3b4cdb1bb5.png">
+<img width="70%" alt="Screen Shot 2021-08-02 at 11 29 11 PM" src="https://user-images.githubusercontent.com/30380214/128193359-2b558b6e-ced2-4d8d-bec8-473934807fd6.png">
+
 ## Callback Hell
+Callback Hell, also known as Pyramid of Doom, is an **anti-pattern** seen in code of asynchronous programming. 
+It is a slang term used to describe and unwieldy number of nested `“if”` statements or functions.
+
+```jsx
+getData(function(x){
+    getMoreData(x, function(y){
+        getMoreData(y, function(z){ 
+            ...
+        });
+    });
+});
+```
+
+## Promise Chain
+The instance method of the `Promise` object such as `then()`, `catch()`, or `finally()` returns a separate promise object. 
+Therefore, you can call the promise’s instance method on the return `Promise`. The successively calling methods in this way is referred to as the promise chaining.
+
+```jsx
+let p = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(10);
+    }, 3 * 100);
+});
+
+p.then((result) => {
+    console.log(result); // 10
+    return result * 2;
+}).then((result) => {
+    console.log(result); // 20
+    return result * 3;
+}).then((result) => {
+    console.log(result); // 60
+    return result * 4;
+});
+```
+
 ## Async/Await, compare with Promise
 ## Handle error with Promise
 ## Handle error with Async/await
