@@ -376,3 +376,6 @@ const createStoreWithMiddleware = applyMiddleware(ReduxThunk, logger)(createStor
 You can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for. Whereas Redux is much more powerful and provides a large number of features that the Context Api doesn't provide.
 
 Also, React Redux uses context internally but it doesn’t expose this fact in the public API. So you should feel much safer using Context via React Redux than directly because if it changes, the burden of updating the code will be on React Redux instead developer responsibility.
+
+## What is combine reducer?
+The `combineReducers` helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore . The resulting reducer calls every child reducer, and gathers their results into a single state object.
