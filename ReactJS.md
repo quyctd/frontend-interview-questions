@@ -335,3 +335,32 @@ The only way to change the state is to emit an action, an object describing what
 
 ## What is Redux Thunk?
 **Redux Thunk** middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods `dispatch` and `getState()` as parameters.
+
+## What is the difference between `mapStateToProps()` and `mapDispatchToProps()`?
+`mapStateToProps()` is a utility which helps your component get updated state (which is updated by some other components):
+```jsx
+const mapStateToProps = (state) => {
+  return {
+    todos: getVisibleTodos(state.todos, state.visibilityFilter),
+  };
+};
+```
+
+`mapDispatchToProps()` is a utility which will help your component to fire an action event (dispatching action which may cause change of application state):
+```jsx
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTodoClick: (id) => {
+      dispatch(toggleTodo(id));
+    },
+  };
+};
+```
+Recommend always using the "object shorthand" form for the `mapDispatchToProps`
+
+Redux wrap it in another function that looks like `(…args) => dispatch(onTodoClick(…args))`, and pass that wrapper function as a prop to your component.
+```jsx
+const mapDispatchToProps = {
+  onTodoClick,
+};
+```
