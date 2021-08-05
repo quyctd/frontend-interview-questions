@@ -307,6 +307,10 @@ An alternative to `useState`. Accepts a reducer of type `(state, action) => newS
 ## Why and when Redux
 
 ## Middleware in Redux
+
+## Redux flow
+![image](https://redux.js.org/assets/images/ReduxDataFlowDiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif)
+
 ## Direct mutate states/objects?
 For objects, this objects can be using somewhere else, because object is passed down by reference. If somewhere else using it, it can lead to odd bugs, and hard to debug.
 
