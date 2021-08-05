@@ -241,12 +241,77 @@ export default withHover(
 => That is a few problems with React components => React hooks was introduced.
 
 ## Lifecycle in React
+![Screen Shot 2021-08-05 at 12 59 53 PM](https://user-images.githubusercontent.com/30380214/128299098-7016b957-bb78-4a45-9d7e-39580f53d995.png)
+
 ## useEffect hook
+The Effect Hook lets you perform side effects in function components:
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+useEffect can perform cleaning up (componentWillMount) by return a function inside useEffect().
+useEffect also receive an array of dependencies.
+
 ## useState hook
+Help us able to use state inside functional component.
+
 ## useMemo hook
+```jsx
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+```
+Returns a memoized value.
+
+Pass a “create” function and an array of dependencies. useMemo will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render.
+**You may rely on useMemo as a performance optimization, not as a semantic guarantee.**
+
 ## useCallback hook
+```jsx
+const memoizedCallback = useCallback(
+  () => {
+    doSomething(a, b);
+  },
+  [a, b],
+);
+```
+Returns a memoized callback.
+
+Pass an inline callback and an array of dependencies. useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed. This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate).
+
+`useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`.
+
 ## useReducer hook
+```jsx
+const [state, dispatch] = useReducer(reducer, initialArg, init);
+```
+An alternative to `useState`. Accepts a reducer of type `(state, action) => newState`, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
+
 ## custom hook in FC
 ## Why and when Redux
+
 ## Middleware in Redux
-## Direct mutate states?
+## Direct mutate states/objects?
+For objects, this objects can be using somewhere else, because object is passed down by reference. If somewhere else using it, it can lead to odd bugs, and hard to debug.
+
+For state of React:
+- NEVER mutate `this.state` directly, as calling `setState()` afterwards may replace the mutation you made. Treat `this.state` as if it were immutable.
+- `setState()` does not immediately mutate `this.state` but creates a pending state transition. Accessing `this.state` after calling this method can potentially return the existing value.
+- There is no guarantee of synchronous operation of calls to `setState` and calls may be batched for performance gains.
+- `setState()` will always trigger a re-render unless conditional rendering logic is implemented in `shouldComponentUpdate()`. If mutable objects are being used and the logic cannot be implemented in `shouldComponentUpdate()`, calling `setState()` only when the new state differs from the previous state will avoid unnecessary re-renders.
