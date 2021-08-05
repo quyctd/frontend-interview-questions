@@ -183,6 +183,62 @@ class Counter extends React.Component {
 	}
 }
 ```
+## Why hooks was introduced
+First, to understand why hooks was introduced, we need to understand what is the problem before React hooks, especially is React Component.
+#### constructor
+With Class components, you initialize the state of the component inside of the `constructor` method as a `state` property on the instance (`this`). 
+However, according to the ECMAScript spec, if you’re extending a subclass (in this case, `React.Component`), you must first invoke `super` before you can use `this`. Specifically, when using React, you also have to remember to pass props to `super`.
+```jsx
+  constructor (props) {
+    super(props) // 🤮
+
+    ...
+  }
+```
+#### Autobinding
+React developers everywhere realized they didn’t know how the `this` keyword worked. Instead of having method invocations that “just worked”, you had to remember to `.bind` methods in the class’s `constructor`. If you didn’t, you’d get the popular `“Cannot read property setState of undefined”` error.
+```jsx
+  constructor (props) {
+    ...
+
+    this.updateRepos = this.updateRepos.bind(this) // 😭
+  }
+```
+#### Duplicate Logic
+We need three separate methods (`componentDidMount`, `componentDidUpdate`, and `updateRepos`) to accomplish the same thing
+```jsx
+  componentDidMount () {
+    this.updateRepos(this.props.id)
+  }
+  componentDidUpdate (prevProps) {
+    if (prevProps.id !== this.props.id) {
+      this.updateRepos(this.props.id)
+    }
+  }
+  updateRepos = (id) => {
+    this.setState({ loading: true })
+
+    fetchRepos(id)
+      .then((repos) => this.setState({
+        repos,
+        loading: false
+      }))
+  }
+  ```
+#### Sharing Non-visual Logic
+In React work, not only we need to render views, but it's common to build a logic function only. But React doesn't support it.
+So, in the old days, we handle this by implement HOCs or using Props drilling
+So it can lead to HOCs hell - wrapper hell
+```jsx
+export default withHover(
+  withTheme(
+    withAuth(
+      withRepos(Profile)
+    )
+  )
+)
+```
+=> That is a few problems with React components => React hooks was introduced.
 
 ## Lifecycle in React
 ## useEffect hook
