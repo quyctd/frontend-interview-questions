@@ -364,3 +364,15 @@ const mapDispatchToProps = {
   onTodoClick,
 };
 ```
+
+## How to add multiple middlewares to Redux?
+You can use `applyMiddleware` where you can pass each piece of middleware as a new argument. So you just need to pass each piece of middleware you'd like. For example, you can add Redux Thunk and logger middlewares as an argument as below:
+```jsx
+import { createStore, applyMiddleware } from 'redux'
+const createStoreWithMiddleware = applyMiddleware(ReduxThunk, logger)(createStore);
+```
+
+## What is React context vs React Redux?
+You can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for. Whereas Redux is much more powerful and provides a large number of features that the Context Api doesn't provide.
+
+Also, React Redux uses context internally but it doesn’t expose this fact in the public API. So you should feel much safer using Context via React Redux than directly because if it changes, the burden of updating the code will be on React Redux instead developer responsibility.
