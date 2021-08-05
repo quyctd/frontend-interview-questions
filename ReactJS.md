@@ -319,3 +319,17 @@ For state of React:
 - `setState()` does not immediately mutate `this.state` but creates a pending state transition. Accessing `this.state` after calling this method can potentially return the existing value.
 - There is no guarantee of synchronous operation of calls to `setState` and calls may be batched for performance gains.
 - `setState()` will always trigger a re-render unless conditional rendering logic is implemented in `shouldComponentUpdate()`. If mutable objects are being used and the logic cannot be implemented in `shouldComponentUpdate()`, calling `setState()` only when the new state differs from the previous state will avoid unnecessary re-renders.
+
+## What are reducers in redux?
+The reducer is a pure function that takes the previous state and an action, and returns the next state.
+```jsx
+(previousState, action) => newState
+```
+It's very important that the reducer stays pure. Things you should never do inside a reducer:
+- Mutate its arguments;
+- Perform side effects like API calls and routing transitions;
+- Call non-pure functions, e.g. `Date.now()` or `Math.random()`
+
+## How is state changed in redux?
+The only way to change the state is to emit an action, an object describing what happened. This ensures that neither the views nor the network callbacks will ever write directly to the state. Instead, they express an intent to transform the state. Because all changes are centralized and happen one by one in a strict order, there are no subtle race conditions to watch out for. As actions are just plain objects, they can be logged, serialized, stored, and later replayed for debugging or testing purposes.
+
