@@ -437,3 +437,7 @@ console.log(array1.reduce(reducer));
 console.log(array1.reduce(reducer, 5));
 // expected output: 15
 ```
+
+## Decide array methods
+<img width="70%" alt="Screen Shot 2021-08-31 at 23 34 52" src="https://user-images.githubusercontent.com/30380214/131541834-f2a58838-d092-4f72-b661-8c7e3a44f210.png">
+
